@@ -7,6 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>SampleProject</name>
   <url>http://maven.apache.org</url>
+  <properties>
+  <sonar.projectKey>kbat-j_formation</sonar.projectKey>
+  <sonar.organization>kbat-j</sonar.organization>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
