@@ -17,6 +17,17 @@ node () {
 			} 
  		} 
 	}
+	
+	stage ('APP-IC - Quality Analisys') {
+
+       	withSonarQubeEnv('Sonar') { 
+
+          bat 'mvn sonar:sonar'
+
+	} 
+
+	}
+	
 	stage ('APP-IC - Post build actions') {
 /*
 Please note this is a direct conversion of post-build actions. 
